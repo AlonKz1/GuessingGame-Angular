@@ -1,0 +1,39 @@
+<div class="bodyContainer">
+  <div class="inputsContainer">
+    <div class="pBox">
+      <p>Red:</p>
+      <p>Green:</p>
+      <p>Blue:</p>
+    </div>
+    <div class="inputBox">
+      <input type="number" #num1 (input)="r = num1.value" />
+      <input type="number" #num2 (input)="g = num2.value" />
+      <input type="number" #num3 (input)="b = num3.value" />
+    </div>
+  </div>
+  <div class="userBox" appGuessColor></div>
+  <div class="computerBox" appColor></div>
+</div>
+<div class="buttonsContainer example-button-row">
+  <div>
+    <button
+      mat-stroked-button
+      color="primary"
+      (click)="randomColor()"
+    >
+      Random Color
+    </button>
+  </div>
+  <div>
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="checkColor()"
+    >
+      Check Answer
+    </button>
+  </div>
+</div>
+
+<h1 *ngIf="answer | async" class="message">ANSWER CORRRECT!!</h1>
+<h1 *ngIf="(answer | async) === false" class="message">INCORRECT ANSWER</h1>

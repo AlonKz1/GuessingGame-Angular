@@ -1,0 +1,60 @@
+.inputBox {
+ display: flex;
+ flex-direction: column;
+ gap: 35px;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+input {
+  height: 25px;
+  width: 100px;
+  border: 2px solid black;
+}
+p {
+  /* font-weight: bold; */
+  font-size: 22px;
+  margin: 0px;
+}
+
+.pBox {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.userBox {
+  width: 200px;
+  height: 150px;
+  border: 1px solid black
+}
+
+.computerBox {
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.message {
+  text-align: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
